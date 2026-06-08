@@ -1,8 +1,5 @@
 <!--
 **eae1212/eae1212** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
@@ -12,51 +9,56 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# 👨‍💻 Александр | Senior System Analyst & Integration Architect
+## Привет
 
-Приветствую! Я — системный аналитик и архитектор решений с глубоким техническим бэкграундом (**29 лет в IT, Кандидат наук**).
+Системный и интеграционный аналитик с глубоким техническим бэкграундом —
+29 лет в IT, кандидат наук. Специализируюсь на стыке двух востребованных
+направлений: **проектирование сложных интеграционных решений (API)** и
+**внедрение генеративного ИИ в корпоративный контур (LLM / RAG)**.
 
-Специализируюсь на проектировании сложных enterprise-интеграций (**API, ESB, Broker**) и внедрении генеративного ИИ в корпоративный контур (**LLM, RAG-архитектура**). Эффективно связываю бизнес-требования с технической реализацией.
-
----
-
-## 🚀 Ключевые компетенции
-
-*   **Integration Architecture:** Проектирование REST/SOAP API, шин данных (MS BizTalk), брокеров, сквозных сценариев маппинга данных.
-*   **AI & RAG Solutions:** Проектирование локальных ИИ-ассистентов (Ollama, OpenWebUI), интеграция LLM (DeepSeek) в бизнес-процессы.
-*   **System Analysis:** Сбор требований, разработка ТЗ (ГОСТ/Agile), Use Cases, моделирование процессов в BPMN / UML.
+За счёт опыта в разработке (Python, FastAPI, C#, JS) разговариваю с
+разработчиками на одном языке: самостоятельно пишу ТЗ на интеграции,
+проектирую схемы данных, настраиваю AI-ассистентов.
 
 ---
 
-## 📐 Архитектура Pet-проектов (Концепты)
+### Ключевые компетенции
 
-*Коммерческий код находится под NDA. Личные проекты вынесены в отдельные схемы:*
-
-### 1. Интеллектуальный аудио-ридер с ИИ (Android / Android Auto)
-Приложение для чтения книг с автоматическим суммаризатором глав на базе LLM DeepSeek и гибким синтезом речи (Yandex SpeechKit / Piper TTS).
-*   **Фокус:** Паттерн Fallback (offline-синтез при потере сети) и FastAPI-прокси для защиты API-ключей.
-*   🔗 **[Архитектурная схема потоков данных (Mermaid) ↗](СЮДА_ВСТАВЬТЕ_ССЫЛКУ_НА_ПЕРВЫЙ_GIST)**
-
-### 2. Спортивный трекер (Flutter + Serverless бэкенд)
-Кроссплатформенное приложение для планирования тренировок с аналитическим модулем.
-*   **Фокус:** Проектирование реляционной модели данных, оптимизация SQL-запросов, интеграция с REST API Supabase Edge Functions.
-*   🔗 **[ER-диаграмма модели данных (Mermaid) ↗](СЮДА_ВСТАВЬТЕ_ССЫЛКУ_НА_ВТОРОЙ_GIST)**
+- **AI / Data Science** — RAG (Retrieval-Augmented Generation), LLM
+  (DeepSeek, Ollama), OpenWebUI, векторные базы знаний.
+- **Интеграции и архитектура** — REST API, SOAP, MS BizTalk, системная
+  интеграция, проектирование API, XML / XSLT, JSON, LDAP.
+- **Системный анализ** — сбор и формализация требований, разработка ТЗ,
+  сценарии использования (Use Cases), моделирование бизнес-процессов
+  (BPMN), написание инструкций.
+- **Бэкенд и базы данных** — Python (FastAPI, Flask, SQLAlchemy), C#,
+  JavaScript / TypeScript, SQL (PostgreSQL, Oracle PL/SQL, MS SQL T-SQL).
 
 ---
 
-## 🧰 Технологический стек
+### Pet-проекты
 
-*   **Анализ и дизайн:** BPMN, UML, Use Cases, С4 Model, Разработка ТЗ, Архитектура API
-*   **Интеграции:** REST, SOAP, MS BizTalk, JSON, XML, XSLT, gRPC, LDAP
-*   **AI / LLM:** RAG (Retrieval-Augmented Generation), DeepSeek, Ollama, OpenWebUI
-*   **Языки и бэкенд:** Python (FastAPI, Flask, SQLAlchemy), C#, JavaScript, TypeScript
-*   **Базы данных:** PostgreSQL, Oracle PL/SQL, MS SQL Server (T-SQL), Supabase
-*   **Мобильный стек:** Flutter (Provider, Bloc, GetX), Android SDK, Android Auto
+**fb2_auto** — Android-ридер FB2 с озвучкой и интеграцией в Android Auto.
+Три TTS-движка через единую абстракцию (системный TTS, локальный
+`sherpa-onnx`, Yandex SpeechKit), PCM-стриминг через `AudioTrack` для
+плавной озвучки в наушниках, в Android Auto и при подключении к ГУ
+автомобиля по Bluetooth. Резюме главы через OpenAI-совместимый ИИ
+(DeepSeek по умолчанию, можно подключить OpenAI / OpenRouter / Ollama /
+LM Studio).
+[Обзор архитектуры](<ссылка на gist>)
+
+**training_diary** — спортивный трекер на Flutter (Android + Web).
+Local-first с локальной SQLite через Drift, опциональный sync в Supabase
+с конфликт-резолвингом по `dirty`-флагу. Поддержка SOCKS5 / HTTP-прокси
+через свой `BaseClient` для регионов с ограниченным доступом;
+cross-platform через conditional imports.
+[Обзор архитектуры](<ссылка на gist>)
 
 ---
 
-## 📬 Контакты для связи
+### Контакты
 
-*   **Telegram:** [@ваш_ник]
-*   **Email:** [ваш_email@example.com]
-*   **Резюме:** [Ссылка на ваше резюме на hh.ru]
+- HH.ru: <ссылка>
+- LinkedIn: <ссылка>
+- Email: <ссылка>
+- Telegram: <ссылка>
