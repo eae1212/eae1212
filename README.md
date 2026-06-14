@@ -31,8 +31,7 @@
 - **Системный анализ** — сбор и формализация требований, разработка ТЗ,
   сценарии использования (Use Cases), моделирование бизнес-процессов
   (BPMN), написание инструкций.
-- **Бэкенд и базы данных** — Python (FastAPI, Flask, SQLAlchemy), C#,
-  JavaScript / TypeScript, SQL (PostgreSQL, Oracle PL/SQL, MS SQL T-SQL).
+- **Бэкенд и базы данных** — JS/TS, Dart, Python, C#, SQL (PostgreSQL, Oracle PL/SQL, MS SQL T-SQL).
 
 ---
 
