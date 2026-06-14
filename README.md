@@ -45,7 +45,7 @@
 автомобиля по Bluetooth. Резюме главы через OpenAI-совместимый ИИ
 (DeepSeek по умолчанию, можно подключить OpenAI / OpenRouter / Ollama /
 LM Studio).
-[Обзор архитектуры](<ссылка на gist>)
+[Обзор архитектуры](<[ссылка на gist](https://gist.github.com/eae1212/378fbd38f9a21ab8d52a5d4d194f3c98)>)
 
 **training_diary** — спортивный трекер на Flutter (Android + Web).
 Local-first с локальной SQLite через Drift, опциональный sync в Supabase
